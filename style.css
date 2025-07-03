@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2C2F33;  /* Discord dark background */
+  color: #FFFFFF;
+  margin: 1.5em;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #7289DA;  /* Discord blurple */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.8em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Links */
+a {
+  color: #99AAB5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+  color: #7289DA;
+  text-decoration: underline;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2em;
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  background-color: #23272A; /* Slightly lighter dark */
+  padding: 0.5em 1em;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+nav ul li:hover {
+  background-color: #7289DA;
+}
+
+nav ul li a {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Code Blocks */
+pre, code {
+  background-color: #23272A;
+  color: #FFFFFF;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #7289DA;
+  margin-left: 0;
+  padding-left: 1em;
+  color: #99AAB5;
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    margin: 1em;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
